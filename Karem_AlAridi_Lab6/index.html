@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>JS-Lab6</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main">
-        
-    <p style="font-weight: bolder;">Welcome <span id="fname"> FName </span> <span id="lname"> LName </span></p>
-    <div class="form">
-    <form>
-        <label for="a">a = </label> <input type="number" id="a" name="a">
-        <br>
-        <br>
-        <label for="b">b = </label><input type="number" id="b" name="b">
-        <br><br>
-        <input type="button" value="add" id="add" onclick="calculate(this)">
-        <input type="button" value="subtract" id="subtract" onclick="calculate(this)">
-        <input type="button" value="multiply" id="multiply" onclick="calculate(this)">
-        <input type="button" value="divide" id="divide" onclick="calculate(this)">
-    </form>
-    <p id="res">results: </p>
+      <p style="font-weight: bolder">
+        Welcome <span id="fname"> FName </span> <span id="lname"> LName </span>
+      </p>
+      <div class="form">
+        <form>
+          <label for="a">a = </label> <input type="number" id="a" name="a" />
+          <br />
+          <br />
+          <label for="b">b = </label><input type="number" id="b" name="b" />
+          <br /><br />
+          <input type="button" value="add" id="add" onclick="calculate(this)" />
+          <input
+            type="button"
+            value="subtract"
+            id="subtract"
+            onclick="calculate(this)"
+          />
+          <input
+            type="button"
+            value="multiply"
+            id="multiply"
+            onclick="calculate(this)"
+          />
+          <input
+            type="button"
+            value="divide"
+            id="divide"
+            onclick="calculate(this)"
+          />
+        </form>
+        <p id="res">result:</p>
 
-    <br>
-    <br>
-    <input type="button" onclick="pintarr()">
-
-    </div></div>
+        <br />
+        <br />
+        <input
+          type="button"
+          value="print array"
+          id="print"
+          onclick="pintarr()"
+        />
+        <p id="arrprint"></p>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
