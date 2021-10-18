@@ -7,7 +7,6 @@ const res = document.getElementById("res");
 const fname = document.getElementById("fname");
 const lname = document.getElementById("lname");
 const array = [];
-console.log(name1);
 
 if (name1 != null || name2 != null) {
   const person = { fname: name1, lname: name2 };
