@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+}
+
+/* NAV */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+.logo {
+    display: initial;
+    vertical-align: 5px;
+    margin-left: 16px;
+}
+
+nav {
+    display: inline-block;
+    width: 80%;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    text-shadow: 1px 1px 10px white;
+}
+
+nav ul li a:active {
+    color: gold;
+}
+
+/* Banner */
+
+.banner {
+    background-image: url(banner.jpg);
+    background-size: cover;
+    margin: 0px;
+    padding: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner_p1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.banner_p2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.banner_p3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.banner_p4 {
+    font-size: 17.8px;
+    text-align: center;
+}
+
+/* Why Choose Us */
+
+.intoduction_container span {
+    font-size: 40px;
+    background-color: black;
+    color: gold;
+    border-radius: 50%;
+    border-color: gold;
+    border-style: solid;
+    padding: 10px;
+}
+
+.intoduction_container {
+    text-align: center;
+    margin: 0px 20px 10px 20px;
+}
+
+.intoduction_container h1 {
+    padding: 10px;
+}
+
+.title {
+    text-align: center;
+}
+
+/* Gallery */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.grid-item {
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.item1 {
+    grid-column: 1/3;
+}
+
+.item2 {
+    grid-row: 1/3;
+    grid-column: 3/4;
+}
+
+.item5 {
+    grid-column: 1/3;
+}
+
+.info {
+    background-color: #333;
+    text-align: center;
+    color: gold;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.contact_msg {
+    font-size: 20px;
+}
+
+.num {
+    font: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .banner {
+        background-image: url(banner2.jpg);
+    }
+    .intoduction_container span {
+        background-color: black;
+        color: aqua;
+        border-color: aqua;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        width: 95%;
+    }
+    .grid-container img {
+        width: 100%;
+    }
+    .grid-item {
+        width: 70%;
+    }
+    .item1 {
+        grid-column: 1/3;
+    }
+    .item2 {
+        grid-column: 1/3;
+    }
+    .item5 {
+        grid-column: 1/2;
+    }
+
+    .title{
+        font-weight: bolder;
+        font-style: italic;
+    }
+}

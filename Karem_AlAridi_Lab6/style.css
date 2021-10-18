@@ -1,0 +1,17 @@
+body {
+  background-color: #a52a2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  display: inline-block;
+}
+
+.form {
+  display: inline-block;
+
+  padding: 10px;
+  background-color: #8a2be2;
+}

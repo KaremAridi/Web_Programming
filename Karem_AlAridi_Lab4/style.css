@@ -1,0 +1,269 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Day Roman';
+    src: url('fonts/DAYROM__.ttf');
+    src: url('ffonts/DAYROM__.ttf') format('embedded-opentype'), url('fonts/DAYROM__.ttf') format('woff'), url('fonts/DAYROM__.ttf') format('truetype'), url('fonts/DAYROM__.ttf') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BallparkWeiner';
+    src: url('fonts/BALLW___.TTF');
+    src: url('fonts/BALLW___.TTF') format('embedded-opentype'), url('fonts/BALLW___.TTF') format('woff'), url('fonts/BALLW___.TTF') format('truetype'), url('fonts/BALLW___.TTF') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* "Trebuchet MS"is built in */
+
+/* Body */
+
+body {
+    background-image: url(images/yellow_background.png);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+/* Main Wrapper */
+
+#main_wrapper {
+    width: 900px;
+    margin: auto;
+}
+
+/* Sections font */
+
+section h1, footer h1, nav a {
+    font-family: 'Day Roman', serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Header */
+
+header {
+    background: url('images/line.png') repeat-x bottom;
+}
+
+#main_title
+{
+    display: inline-block;
+}
+
+/* Zozor title */
+
+header h1 {
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    /* Icon next to title */
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+/* Travel diariese */
+
+header h2 {
+    font-family: 'Day Roman', serif;
+    font-size: 1.1em;
+    font-weight: normal;
+    margin-top: 0px;
+}
+
+/* Navigation */
+
+nav {
+    /* fix positinons */
+    display: inline-block;
+    width: 745px;
+    text-align: right;
+}
+
+nav ul {
+    /* remove circles */
+    list-style-type: none;
+}
+
+nav li {
+    /* side by side */
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Nav link */
+
+nav a {
+    text-decoration: none;
+    color: #181818;
+    font-size: 1.3em;
+}
+
+nav a:hover {
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+/* Banner */
+
+#banner_image {
+    background: url('images/sanfrancisco.jpg') no-repeat;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 200px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px #000000;
+    position: relative;
+}
+
+/* Banner Description */
+
+#banner_description {
+    background-color: rgba(24, 24, 24, 0.8);
+    color: #fff;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 98.7%;
+    height: 20%;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+/* Red Button */
+
+.red_button {
+    background: url('images/red_background.png');
+    display: inline-block;
+    color: #fff;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 4px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+/* Body */
+article, aside
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+article
+{
+    width: 65%;
+    margin-right: 15px;
+}
+
+article p
+{
+    font-size: 0.8em;
+}
+
+aside
+{
+    position: relative;
+    width: 30%;
+    font-size: 0.9em;
+    color: white;
+    background-color: #706b64;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #1c1a19;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+
+#arrow
+{
+    position: absolute;
+    top: 100px;
+}
+
+#zozor_picture
+{
+    text-align: center;
+}
+
+#zozor_picture img
+{
+    border: 1px solid #181818;
+}
+
+aside img
+{
+    margin-right: 10px;
+}
+
+/* Footer */
+
+footer
+{
+    background:  url('images/top.png') no-repeat top center, url('images/line.png') repeat-x top, url('images/shadow.png') repeat-x top;
+    padding-top: 25px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+#tweet, #my_pictures, #my_friends
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#tweet
+{
+    width: 28%;
+}
+
+#my_pictures
+{
+    width: 35%;
+}
+
+#my_friends
+{
+    width: 31%;
+}
+
+#my_pictures img
+{
+    border: 1px solid #181818;
+    margin-right: 2px;
+}
+
+#my_friends ul
+{
+    display: inline-block;
+    margin-top: 0;
+    width: 40%;
+    list-style-image: url('images/external_link.png');
+    padding-left: 2px;
+}
+
+#my_friends a
+{
+    color: #660405;
+    text-decoration: none;
+}
+
