@@ -65,5 +65,41 @@ for(x of company){
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// function user(){
 
-Object.defineProperty(user,{})
+// }
+// Object.defineProperty(user,{});
+
+
+///////////////////////////////////////
+const ul = document.querySelector("ul");
+var input = document.querySelector("input");
+const btn = document.querySelector("button");
+var inp;
+
+
+
+const myFunc = () =>{
+inp = input.value;
+
+var li = document.createElement("li");
+var span = document.createElement("span");
+var button = document.createElement("button");
+
+
+span = document.createTextNode(inp);
+button.innerHTML = "<h2>Delete</h2>";
+
+const deleteLi = () =>{
+    li.remove();
+    }
+    
+button.addEventListener("click",deleteLi);
+
+li.appendChild(span);
+li.appendChild(button);
+
+ul.appendChild(li);
+}
+
+btn.addEventListener("click",myFunc);
