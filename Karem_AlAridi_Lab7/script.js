@@ -65,10 +65,41 @@ for(x of company){
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// function user(){
+const user={
+    name:"",
+    email:"",
+    password:"",
 
-// }
-// Object.defineProperty(user,{});
+    set UserName(x){
+        this.name=x;
+    },
+
+    get UserName(){
+        return this.name;
+    }
+};
+
+Object.defineProperty(user,"password",{
+    writable: false,
+    enumerable:false,
+    configurable: false,    
+});
+
+Object.defineProperty(user,"nationality",{
+    value:"Lebanese",
+});
+
+function printUserInfo(){
+    console.log(user);
+}
+
+function keysUser(){
+    return Object.keys(user);
+}
+
+delete user.nationality;
+
+
 
 
 ///////////////////////////////////////
@@ -92,8 +123,8 @@ button.innerHTML = "<h2>Delete</h2>";
 
 const deleteLi = () =>{
     li.remove();
-    }
-    
+}
+
 button.addEventListener("click",deleteLi);
 
 li.appendChild(span);
