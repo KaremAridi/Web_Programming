@@ -47,12 +47,13 @@ app.post("/processForm", upload.single("user_image"), (req, res) => {
     color +
     "</p></body></html>";
 
-  res.send(htmlReq);
-
-  fs.writeFile(__dirname + '\\public\\'+name+'.html', htmlReq, function (err) {
+    let filey = __dirname + '\\public\\'+name+'.html';
+  fs.writeFile(filey, htmlReq,{ flag: "wx" }, function (err) {
     if (err) {
+        res.sendFile(filey);
       return console.log(err);
     }
-    console.log("The file was saved!");
+    console.log("saved");
+    res.send(htmlReq);
   });
 });
