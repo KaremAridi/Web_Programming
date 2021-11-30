@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Maps</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <p>Set your location manually or get it automatically</p>
+    <input type="button" onclick="setMark()" value="Set"></button>
+    <input type="button" onclick="getLocation()" value="GetLoc"></button>
+    <br><br>
+    <input type="number" id="latitude" />
+    <input type="number" id="longtitude" />
+
+    <p id="location">Where am I?</p>
+    
+    <div id="map"></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd50sqhKpWSKZCP7UA4pt_2gMHbrjognU&callback=initMap&v=weekly"
+      async
+    ></script>
+    
+    <script>
+      var x = document.getElementById("location");
+      var lattemp = document.getElementById("latitude");
+      var longtemp = document.getElementById("longtitude");
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(Position);
+        } else { 
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+      
+      function Position(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br><br>Longitude: " + position.coords.longitude;
+        lattemp.value = position.coords.latitude;
+        longtemp.value = position.coords.longitude;
+        setMark();
+      }
+      </script>
+  </body>
+</html>
