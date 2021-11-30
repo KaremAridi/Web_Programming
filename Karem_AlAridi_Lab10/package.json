@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "openweather-apis": "^4.4.2"
+  }
+}
