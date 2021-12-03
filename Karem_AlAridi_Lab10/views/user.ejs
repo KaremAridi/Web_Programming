@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+</head>
+
+<body>
+    <img src="<%= imageURL %>" alt="user profile"> <br>
+    <p>
+        Welcome <b>
+            <%= name %>
+        </b>
+    </p>
+    <label for="weatherOption">get weather</label>
+    <select name="weatherOption" id="weatherOptionSelector">
+        <option value="CurrentLocation" selected>of current location</option>
+        <option value="CityName">by city name</option>
+    </select>
+    <br><br>
+    <input type="button" value="check my city" id="myLocation" onclick="myLocation()">
+    <div id="chooseCity" hidden>
+        <p>Enter the name of the city</p>
+        <input type="text" name="city" id="city">
+        <input type="button" value="check" onclick="chosenCity()">
+    </div>
+    <br><br>
+    <table id="weatherInfoTable" border="1">
+        <tr>
+            <td>City</td>
+            <td>Temperature</td>
+            <td>Pressure</td>
+        </tr>
+    </table>
+    <script src="user.js"></script>
+</body>
+
+</html>
